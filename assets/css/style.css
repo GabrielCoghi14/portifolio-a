@@ -2,22 +2,41 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
+:root {
+    --color-destak: #dd1818;
+    --color-default: #333333;
+    --color-escura: #111111;
+    --color-clara: #E1E6E1;
+    --font-title: "Montserrat", sans-serif;
+    --font-body: "Poppins", sans-serif;
+}
+
+header{
+    height: 100vh;
+
+}
 header::before{
     content: "";
-    background-image: url("../images/Header.png");
-    height: 100vh;
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/901/406/533/formula-1-lewis-hamilton-hd-wallpaper-preview.jpg");
+    height: 60vh;
     width: 100vw;
     display: block;
-    position: absolute;
+    position: absolute ;
     z-index: -10;
+    
+    
     
 }
 
  h1{
+    
     font-family: "Montserrat", sans-serif;
     color: #E1E6E1;
     font-size: 56px;
     font-weight: bold;
+    text-align: center;
+    
   }
 
   h1 span{
@@ -29,6 +48,32 @@ h2{
     font-size: 24;
     font-weight: bold;
     color: #E1E6E1;
+    text-align: center;
 }
+
+#secao-apresentação {
+    display: flex;
+    padding: 64px;
+    align-items: center;
+}
+   
+#secao-apresentação img {
+border-radius: 50%;
+}
+#texto-apresentação {
+    color: var(--color-escura);
+}
+#texto-apresentação h2 {
+    font-size: 2.5rem;
+    font-family: var(--font-title)
+}
+#texto-apresentação p{
+    font: 1.5rem;
+    font-family: var(--font-body);
+}
+
+
+
+
 
   
