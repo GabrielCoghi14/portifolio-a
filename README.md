@@ -4,5 +4,4 @@
 - [] Header
 - [] Apresentação
 - [] Pilotos (atuais)
-- [] Lendas
 - [] Circuitos
