@@ -5,14 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title> 
     <link rel="stylesheet" href="assets\css\style.css"> 
+    <script src="./assets/js/script.js" defer></script>
 </head>
  <body>
+   
     <header>
     <h1>Formula <span>1</span></h1>
     <h2>Esporte de velocitta</h2>
     <img src=" https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/F1.svg/2560px-F1.svg.png"height="50" alt="">
     </header>
     
+
+
     <section id="secao-apresentação">
         <img class="flex-container" src="https://github.com/gabrielDallape.png" height="200" alt="foto do gabriel dallape">
         <div id="texto-apresentação">
@@ -60,44 +64,48 @@
     </section>
 
     <section id="secao-orcamento">
-        <h2 >Faça um orçamento</h2>
+        <h2 >Faça sua bet</h2>
         <form action="">
             <div class="campo linha">
-                <label for="nome">Nome</label>
+                <label for="nome">Aposta</label>
                 <input type="text" id="nome">
             </div>
 
                 <div class="campo">
-                    <label for="paginas">Quantidade de páginas</label>
+                    <label for="paginas">Número de apostas</label>
                     <input type="number" id="paginas" min="1" value="1">
                 </div>
                 
 
                 <div class="campo">
-                    <label for="tipo">Tipo de Site</label>
+                    <label for="tipo">Tipo de aposta</label>
                     <select id="tipo">
-                        <option value="1"selected>Estático</option>
-                        <option value="2">Dinâmico</option>
+                        <option value="1"selected>Ganhador</option>
+                        <option value="2">Tempo</option>
                     </select>
                 </div>
 
                 <div class="campo linha">
-                    <label for="">Necessita un prototipo?</label>
+                    <label for="">Moeda</label>
                     <div>
                         <input type="radio" name="prototipo" id="prototipo_sim">
-                        <label for="prototipo_sim">SI</label>
+                        <label for="prototipo_sim">Real</label>
                         <input type="radio" name="prototipo" id="prototipo_nao">
-                        <label for="prototipo_nao">NO</label>
+                        <label for="prototipo_nao">Dolare</label>
                     </div>
                 </div>
+                <div class="linha
+                ">
+                    <input type="checkbox" id="js">
+                    <label for="js">Esta disposto a enriquecer?</label>
+                </div>
 
-                <input type="checkbox" id="js">
-                <label for="js">Dallape é gênio</label>
-
-                <label for="prazo">Prazo</label>
+                <label for="prazo">Risco</label>
                 <input type="range" min="1" max="12" id="prazo">
 
                 <input type="submit" value="Enviar">
+
+                <output id="valor">R$1000,00</output>
 
         </form>
     </section>
@@ -194,6 +202,8 @@
 
     <section>
         <img class="rotate" src="https://archive.org/download/2018-pirelli-f1-tyres/Medium.png" alt="">
+        <img class="rotate1" src="https://archive.org/download/2018-pirelli-f1-tyres/Supersoft.png" alt="">
+        <img class="rotate2" src="https://archive.org/download/2018-pirelli-f1-tyres/Soft.png" alt="">
     </section>
     
 
