@@ -60,12 +60,12 @@ h2{
 
 #secao-apresentação {
     display: flex;
-    padding: 64px;
+    padding: 30px;
     align-items: center;
 }
 
 #secao-apresentação img {
-    border-radius: 50%;
+    border-radius: 45%;
 }
 #texto-apresentação {
     color: var(--color-escura);
@@ -219,3 +219,4 @@ input[type=range]{
   color: var(--text-color); /* Use a variable for text color */
   background-color: var(--card-background-color); /* Use a variable for background color */
 }
+
