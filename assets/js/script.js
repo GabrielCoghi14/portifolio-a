@@ -24,4 +24,9 @@ function calcular(){
 
 
 }
+function playVideo() {
+    var video = document.getElementById('youtube-video');
+    video.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+  }
+ 
 

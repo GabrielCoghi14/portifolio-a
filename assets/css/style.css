@@ -18,8 +18,8 @@
 
 header{
     height: 60vh;
+    position: relative;
     
-
 }
 header::before{
     content: "";
@@ -66,6 +66,7 @@ h2{
 
 #secao-apresentação img {
     border-radius: 45%;
+    margin-right: 40px; /* Adicione margem à direita da imagem */
 }
 #texto-apresentação {
     color: var(--color-escura);
@@ -85,12 +86,15 @@ h2{
 }
 
 #secao-projetos ul {
+    list-style-type: none; /* Remove os marcadores padrão da lista */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 300px; /* Espaçamento entre os cards */
+    padding: 0 20px; /* Adiciona algum espaço nas laterais */
 }
 
 .card {
-    max-width: 350px;
+    max-width: 500px;
     height: 420px;
     position: relative;
     cursor: pointer;
@@ -139,9 +143,9 @@ h2{
 
 .rotate {
     position: absolute;
-    width: 120px;
-    height: 120px;
-    top: 1700px;
+    width: 100px;
+    height: 100px;
+    top: 1778px;
     left: 60%;
     margin:-60px 0 0 -60px;
     animation:spin 800ms linear infinite;
@@ -151,24 +155,24 @@ h2{
 }
 .rotate1 {
     position: absolute;
-    width: 120px;
-    height: 120px;
-    top: 1700px;
+    width: 100px;
+    height: 100px;
+    top: 1778px;
     left: 40%;
     margin:-60px 0 0 -60px;
-    animation:spin 300ms linear infinite;
+    animation:spin 800ms linear infinite;
 }
 @-webkit-keyframes spin { 
     100% { -webkit-transform: rotate(360deg); } 
 }
 .rotate2 {
     position: absolute;
-    width: 120px;
-    height: 120px;
-    top: 1700px;
+    width: 100px;
+    height: 100px;
+    top: 1778px;
     left: 50%;
     margin:-60px 0 0 -60px;
-    animation:spin 500ms linear infinite;
+    animation:spin 800ms linear infinite;
 }
 @-webkit-keyframes spin { 
     100% { -webkit-transform: rotate(360deg); } 
@@ -181,29 +185,72 @@ h2{
     
 
   }
-#secao-orcamento{
-    height: 100vh;
+  #secao-orcamento {
+    background-color: #f3f3f3;
     padding: 3rem;
-
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 }
-  
-#secao-orcamento h2{
+
+#secao-orcamento h2 {
     font-family: var(--font-title);
     text-align: center;
+    margin-bottom: 2rem;
 }
 
-#secao-orcamento form{
+#secao-orcamento form {
     display: grid;
     gap: 1rem;
-    grid-template-columns:repeat(2,1fr) ;
-    flex-direction: column;
+    grid-template-columns: repeat(2, 1fr);
     max-width: 500px;
     margin: 0 auto;
 }
+
 .campo {
     display: flex;
     flex-direction: column;
 }
+
+label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+input[type="range"] {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input[type="checkbox"] {
+    margin-top: 6px;
+    margin-right: 6px;
+}
+
+.radios {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+button {
+    background-color: var(--color-destak);
+    color: white;
+    border: none;
+    padding: 0.75rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #b31515;
+}
+
 
 .linha {
     grid-column: 1 / 3;
@@ -220,3 +267,15 @@ input[type=range]{
   background-color: var(--card-background-color); /* Use a variable for background color */
 }
 
+.plyr__video-embed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupa a altura total da tela */
+  }
+  
+  .plyr__video-embed iframe {
+    width: 2000px; /* Largura desejada */
+    height: 450px; /* Altura desejada */
+  }
+  
